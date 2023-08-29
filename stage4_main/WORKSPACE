@@ -1,0 +1,13 @@
+workspace(name = "my_project")
+
+# new_local_repository(
+#     name = "my_dependency",
+#     path = "/home/pi/examples/cpp-tutorial/stage4/stage4_dep",
+#     build_file = "/home/pi/examples/cpp-tutorial/stage4/stage4_dep/my_library.BUILD.bazel",
+# )
+
+new_local_repository(
+    name = "my_dependency",
+    path = "/home/pi/examples/cpp-tutorial/stage4/stage4_dep",
+    build_file = "//third_party:my_library.BUILD.bazel",
+)
