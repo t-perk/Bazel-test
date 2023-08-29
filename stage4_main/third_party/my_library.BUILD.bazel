@@ -8,7 +8,7 @@
 cc_library(
     name = "my_library",
     srcs = ["my_library.cc"],
-    hdrs = glob(["**/*.h"]),
+    hdrs = glob(["**/*.h", "**/*.hpp"]),
     includes = ["include"],
     copts = ["-D_GLIBCXX_USE_CXX11_ABI=0"],
     visibility = ["//visibility:public"],

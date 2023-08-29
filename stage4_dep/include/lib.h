@@ -8,5 +8,3 @@ class Lib {
             std::cout << "Initializing Lib\n";
         };
 };
-
-class
